@@ -7,7 +7,7 @@ A responsive React + Vite personal portfolio created for the AWS Student Builder
 - Interactive Developer Console: four selectable cards reveal personal development strengths.
 - A visible hint explaining how visitors discover the interactive feature.
 - Responsive desktop and mobile navigation.
-- GitHub project links and a resume link.
+- GitHub project links and contact actions.
 - AWS Amplify build configuration in `amplify.yml`.
 
 ## Run locally
@@ -28,8 +28,8 @@ The production site is generated in `dist/`.
 ## Deploy with AWS Amplify Hosting
 1. Open AWS Amplify in the AWS Console.
 2. Choose **New app → Host web app**.
-3. Connect GitHub and select `gauravbalade/gaurav-tech-universe`, branch `main`.
-4. Confirm the build uses `npm ci`, `npm run build`, and artifact directory `dist`. The included `amplify.yml` supplies this configuration.
+3. Connect GitHub and select `gauravbalade/gaurav-tech-universe`, branch `portfolio-build` (the hackathon version; the assignment branch stays separate).
+4. Confirm the build uses `npm install`, `npm run build`, and artifact directory `dist`. The included `amplify.yml` supplies this configuration.
 5. Deploy, open the Amplify URL, and test navigation, links, contact action, and the interactive Developer Console on desktop and mobile.
 6. Keep the live URL accessible during the judging window.
 
