@@ -222,7 +222,7 @@ function App() {
               <p>Most of my learning happens hands-on: designing a page, connecting an API, modelling data, debugging an unexpected issue, and then refining the experience. I like understanding how the pieces fit together—not just getting a screen to look right.</p>
               <p>I'm currently strengthening my full-stack foundation while exploring cloud deployment and open-source development.</p>
               <div className="about-facts">
-                <div><GraduationCap size={17}/><span><b>Education</b><small>Computer Engineering · DMCE</small></span></div>
+                <div><GraduationCap size={17}/><span><b>Education</b><small>B.E. Computer Engineering · DMCE · 2023–2027</small></span></div>
                 <div><Workflow size={17}/><span><b>Approach</b><small>Understand → build → test → improve</small></span></div>
                 <div><HeartHandshake size={17}/><span><b>Interests</b><small>Useful products · open source · collaboration</small></span></div>
               </div>
@@ -329,6 +329,7 @@ function App() {
               <a className="contact-link primary-contact" href="mailto:gauravbalade@gmail.com"><Mail size={17}/> Email me <ArrowUpRight size={15}/></a>
               <a className="contact-link" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><GitBranch size={17}/> Explore my GitHub <ArrowUpRight size={15}/></a>
               <a className="contact-link" href="https://leetcode.com/u/gauravbalade/" target="_blank" rel="noreferrer"><Code2 size={17}/> LeetCode profile <ArrowUpRight size={15}/></a>
+              <a className="contact-link" href="https://www.linkedin.com/in/gaurav-balade-86bbb3321/" target="_blank" rel="noreferrer"><ExternalLink size={17}/> LinkedIn profile <ArrowUpRight size={15}/></a>
               <a className="contact-link" href="https://github.com/gauravbalade?tab=repositories" target="_blank" rel="noreferrer"><ExternalLink size={17}/> More repositories <ArrowUpRight size={15}/></a>
             </div>
           </div>
