@@ -267,6 +267,13 @@ function App() {
               </article>
             ))}
           </div>
+          <div className="additional-work">
+            <div className="additional-work-heading"><span>ALSO EXPLORED</span><p>Team-based academic work that added experience with collaboration, interface development, backend flows, and relational data.</p></div>
+            <div className="additional-work-grid">
+              <article><span className="mini-project-index">A / TEAM PROJECT</span><h4>Barber Shop Website</h4><p>Contributed to page structure, styling, and client-side interactions for a college team project.</p><div className="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+              <article><span className="mini-project-index">B / TEAM PROJECT</span><h4>Bus Reservation System</h4><p>Contributed to a reservation workflow covering authentication, bus scheduling, ticket booking, and PostgreSQL data storage.</p><div className="project-tags"><span>Python</span><span>Django</span><span>PostgreSQL</span></div></article>
+            </div>
+          </div>
           <div className="work-note"><span><ShieldCheck size={17}/></span><p><b>Honest project notes.</b> PropertySetu is an academic prototype. LazyDesk's hosted preview uses deterministic demo mode; local-model inference is a separate local setup. Each project card links to its source for technical details.</p></div>
         </section>
 
@@ -276,6 +283,11 @@ function App() {
             <div className="journey-layout">
               <div className="journey-heading"><span className="journey-stamp"><BriefcaseBusiness size={23}/></span><h3>Experience is also<br/><em>what you do with it.</em></h3><p>From student communities to open-source experiments and academic builds, each step adds a different perspective.</p></div>
               <div className="timeline">{journey.map((item, index) => <article className="timeline-item" key={item.title}><div className="timeline-marker">{String(index + 1).padStart(2, '0')}</div><div><span className="timeline-date">{item.date}</span><h4>{item.title}</h4><p>{item.text}</p></div></article>)}</div>
+            </div>
+            <div className="milestones">
+              <div className="milestone"><span className="milestone-icon"><Check size={15}/></span><div><small>UNSTOP · 2025</small><b>Winner — Round 1</b><p>Learning Boot Camp, Unstop Talent Park.</p></div></div>
+              <div className="milestone"><span className="milestone-icon"><Check size={15}/></span><div><small>HACKTOBERFEST · 2024</small><b>Level 4 participant badge</b><p>Open-source participation and contribution practice.</p></div></div>
+              <div className="milestone"><span className="milestone-icon"><Check size={15}/></span><div><small>ENSPIRE'26 · MARCH 2026</small><b>Ideathon participant</b><p>Intercollegiate event organised by E-Cell, DMCE.</p></div></div>
             </div>
           </div>
         </section>
