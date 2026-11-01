@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {
-  ArrowDown, ArrowRight, ArrowUpRight, Github, Code2, Database,
+  ArrowDown, ArrowRight, ArrowUpRight, Github, Mail, Code2, Database,
   Server, Cloud, Sparkles, ShieldCheck, GraduationCap, MapPin,
   BriefcaseBusiness, ExternalLink, Terminal, Menu, X, Check,
   Laptop, Workflow, HeartHandshake, ChevronRight
@@ -314,7 +314,8 @@ function App() {
           <div className="contact-panel">
             <div className="contact-copy"><div className="section-kicker"><span>06</span> CONTACT</div><h2>Have a good problem?<br/><em>Let's work on it.</em></h2><p>I'm interested in software development opportunities, practical collaborations, and learning from people who build thoughtful products.</p></div>
             <div className="contact-actions">
-              <a className="contact-link primary-contact" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><Github size={17}/> Explore my GitHub <ArrowUpRight size={15}/></a>
+              <a className="contact-link primary-contact" href="mailto:gauravbalade@gmail.com"><Mail size={17}/> Email me <ArrowUpRight size={15}/></a>
+              <a className="contact-link" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><Github size={17}/> Explore my GitHub <ArrowUpRight size={15}/></a>
               <a className="contact-link" href="https://leetcode.com/u/gauravbalade/" target="_blank" rel="noreferrer"><Code2 size={17}/> LeetCode profile <ArrowUpRight size={15}/></a>
               <a className="contact-link" href="https://github.com/gauravbalade?tab=repositories" target="_blank" rel="noreferrer"><ExternalLink size={17}/> More repositories <ArrowUpRight size={15}/></a>
             </div>
