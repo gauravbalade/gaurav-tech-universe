@@ -43,9 +43,9 @@ const skills = [
 
 const journey = [
   {
-    date: '2025 — 2026',
-    title: 'Publicity Head · CSI-CATT, DMCE',
-    text: 'Worked with the student chapter team to promote campus tech activities, including a Figma workshop and Frontend Face-Off.'
+    date: '2 YEARS',
+    title: 'Publicity Team Member · CSI-CATT, DMCE',
+    text: 'Was a member of the CSI-CATT DMCE Publicity Team for two years, contributing to the promotion and communication of student chapter activities and campus technical events.'
   },
   {
     date: '2026',
@@ -66,7 +66,7 @@ const commandResponses = {
   projects: 'Two featured builds are available here: LazyDesk (open-source AI notes-to-actions MVP) and PropertySetu / PropertyDesk (academic property record and visit-management prototype).',
   lazydesk: 'LazyDesk is a local-first AI desk assistant. Its hosted preview uses deterministic demo mode; the Ollama model path is designed for local model testing. Try the live demo from the project card.',
   propertysetu: 'PropertySetu / PropertyDesk is an academic project for owner records, properties, addresses, visit requests, and status workflows. It is not an official government portal.',
-  journey: 'My journey includes student chapter publicity work at CSI-CATT DMCE, open-source experimentation with LazyDesk, and ongoing full-stack development with PropertySetu.',
+  journey: 'My journey includes two years as a member of the CSI-CATT DMCE Publicity Team, open-source experimentation with LazyDesk, and ongoing full-stack development with PropertySetu.',
   github: 'Open github.com/gauravbalade to explore my repositories, source code, and ongoing work.',
   leetcode: 'I practise problem solving on LeetCode. Open leetcode.com/u/gauravbalade/ to see my profile and activity.'
 }
