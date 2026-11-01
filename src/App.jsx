@@ -119,7 +119,7 @@ function App() {
   const closeMenu = () => setMenuOpen(false)
 
   function runCommand(rawCommand) {
-    const command = rawCommand.trim().toLowerCase().replace(/^\\$\\s*/, '')
+    const command = rawCommand.trim().toLowerCase().replace(/^\$\s*/, '')
     if (!command) return
     if (command === 'clear') {
       setTerminalHistory([])
