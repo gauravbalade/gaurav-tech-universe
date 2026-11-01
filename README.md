@@ -37,7 +37,7 @@ A property record and visit-management learning project with owner profiles, pro
 
 ## Campus involvement
 
-- **CSI-CATT, DMCE — Publicity Team Member (two years):** contributed as a member of the student chapter's publicity team, supporting communication and promotion of campus technical activities.
+- **CSI-CATT, DMCE — Publicity Team Member (August 2024 – October 2026; 2 years 3 months):** contributed as a member of the student chapter's publicity team, supporting communication and promotion of campus technical activities. This was a team-member role, not a leadership or team-head position.
 
 This was a team membership role, not a leadership or team-head position.
 
