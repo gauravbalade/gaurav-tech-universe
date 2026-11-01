@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fbfbfd"/>
+  <rect x="62" y="62" width="1076" height="506" rx="24" fill="#fff" stroke="#e6e8ef"/>
+  <rect x="62" y="62" width="1076" height="7" rx="3" fill="#7658d1"/>
+  <rect x="108" y="116" width="58" height="58" rx="15" fill="#252b40"/>
+  <text x="137" y="155" font-family="Arial,sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#fff">G</text>
+  <circle cx="158" cy="158" r="5" fill="#b8a6ff"/>
+  <text x="108" y="256" font-family="Arial,sans-serif" font-size="19" font-weight="600" fill="#747d90">COMPUTER ENGINEERING · INDIA</text>
+  <text x="108" y="337" font-family="Arial,sans-serif" font-size="66" font-weight="700" letter-spacing="-3" fill="#202538">Gaurav Balade</text>
+  <text x="108" y="405" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#7658d1">I turn ideas into working software.</text>
+  <text x="108" y="461" font-family="Arial,sans-serif" font-size="21" fill="#687186">React · Java · Spring Boot · MySQL · AWS</text>
+  <rect x="790" y="165" width="285" height="245" rx="15" fill="#252b40"/>
+  <circle cx="818" cy="194" r="5" fill="#ee927d"/><circle cx="836" cy="194" r="5" fill="#e1bc75"/><circle cx="854" cy="194" r="5" fill="#79bd91"/>
+  <text x="820" y="246" font-family="monospace" font-size="16" fill="#b8a6ff">const</text>
+  <text x="878" y="246" font-family="monospace" font-size="16" fill="#fff">developer = {</text>
+  <text x="838" y="283" font-family="monospace" font-size="15" fill="#8bd4ab">build: "useful things",</text>
+  <text x="838" y="317" font-family="monospace" font-size="15" fill="#8bd4ab">learn: "every day",</text>
+  <text x="838" y="351" font-family="monospace" font-size="15" fill="#e7b77c">ship: true</text>
+  <text x="820" y="385" font-family="monospace" font-size="16" fill="#fff">}</text>
+</svg>
