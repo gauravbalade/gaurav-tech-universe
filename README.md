@@ -35,6 +35,12 @@ A property record and visit-management learning project with owner profiles, pro
 
 - Source: https://github.com/gauravbalade/propertysetu
 
+## Campus involvement
+
+- **CSI-CATT, DMCE — Publicity Team Member (two years):** contributed as a member of the student chapter's publicity team, supporting communication and promotion of campus technical activities.
+
+This was a team membership role, not a leadership or team-head position.
+
 ## Tech stack
 
 - React 19
