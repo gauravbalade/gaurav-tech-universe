@@ -1,6 +1,10 @@
 # Gaurav Tech Universe
 
-**A personal developer portfolio by Gaurav Balade — built with React, Vite, and a little curiosity.**
+**A personal developer portfolio by Gaurav Balade — built with React, Vite, and a little curiosity.
+
+**Live portfolio:** https://gaurav-tech-universe.vercel.app
+
+**Source code:** https://github.com/gauravbalade/gaurav-tech-universe**
 
 > Final-year Computer Engineering student | Full-stack development | Practical problem-solving
 
@@ -60,15 +64,15 @@ npm run build
 npm run preview
 ```
 
-Vite writes the production site to `dist/`.
+Vite writes the production site to `dist/`. The live Vercel deployment is the primary public portfolio link; AWS Amplify is the separate hosting target for the student challenge.
 
 ## Hosting
 
 ### Vercel
-Connect this GitHub repository to a Vercel project. The included `vercel.json` sets the Vite framework, build command, install command, and `dist` output directory. Git-based deployments publish future commits automatically.
+Production site: https://gaurav-tech-universe.vercel.app. The GitHub `main` branch is connected to Vercel. The included `vercel.json` sets the Vite framework, install command, production build command, and `dist` output directory. Future commits to `main` trigger deployments automatically.
 
 ### AWS Amplify Hosting
-Connect the GitHub repository in Amplify Hosting and select the portfolio branch. The included `amplify.yml` uses Node.js 22, installs dependencies, runs the Vite production build, and publishes `dist/`.
+Connect the GitHub repository in Amplify Hosting and select the `main` branch. The included `amplify.yml` uses Node.js 22, installs dependencies, runs the Vite production build, and publishes `dist/`.
 
 The site is a static portfolio; it does not require EC2, ECS, a database, or AWS credentials in the frontend.
 
