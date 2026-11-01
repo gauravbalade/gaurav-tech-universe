@@ -1,44 +1,84 @@
 # Gaurav Tech Universe
 
-A responsive React + Vite personal portfolio created for the AWS Student Builder Challenge.
+**A personal developer portfolio by Gaurav Balade — built with React, Vite, and a little curiosity.**
 
-## Included
-- About Me, Skills / Tech Superpowers, Projects, Journey, and Contact sections.
-- Interactive Developer Console: four selectable cards reveal personal development strengths.
-- A visible hint explaining how visitors discover the interactive feature.
-- Responsive desktop and mobile navigation.
-- GitHub project links and contact actions.
-- AWS Amplify build configuration in `amplify.yml`.
+> Final-year Computer Engineering student | Full-stack development | Practical problem-solving
+
+## What this portfolio is
+
+A recruiter-friendly portfolio that introduces my background, shows selected software projects, explains my technical toolkit, and gives visitors a small interactive command line to explore the site.
+
+## Highlights
+
+- Clear **About**, **Skills**, **Selected Work**, **Journey**, and **Contact** sections.
+- Custom project previews and direct source links.
+- An interactive visitor terminal with commands such as `help`, `about`, `skills`, `projects`, `lazydesk`, `propertysetu`, `journey`, `github`, and `leetcode`.
+- A visible hint to discover the terminal interaction.
+- Responsive layout, keyboard-accessible controls, reduced-motion support, and social preview metadata.
+- GitHub Actions build check.
+- Ready for Vercel and AWS Amplify Hosting.
+
+## Featured work
+
+### LazyDesk — open-source AI MVP
+A local-first notes-to-actions assistant. The React workspace and FastAPI backend are designed around summaries, action items, and follow-up questions. The hosted preview uses a clearly labelled deterministic demo mode; the Ollama model path is intended for local evaluation.
+
+- Source: https://github.com/gauravbalade/LazyDesk
+- Hosted preview: https://lazydesk-web-final.onrender.com
+
+### PropertySetu / PropertyDesk — academic project
+A property record and visit-management learning project with owner profiles, property records, addresses, visit requests, and status workflows. It is an academic prototype, not an official government registration portal.
+
+- Source: https://github.com/gauravbalade/propertysetu
+
+## Tech stack
+
+- React 19
+- Vite 8
+- JavaScript (ES modules)
+- CSS
+- Lucide React
+- Node.js 22 for local development and CI
 
 ## Run locally
-Requirements: Node.js 18 or newer.
+
+Requirements: Node.js 22 and npm.
+
 ```bash
+git clone https://github.com/gauravbalade/gaurav-tech-universe.git
+cd gaurav-tech-universe
 npm install
 npm run dev
 ```
+
 Open the local URL printed by Vite (normally http://localhost:5173).
 
 ## Production build
+
 ```bash
 npm run build
 npm run preview
 ```
-The production site is generated in `dist/`.
 
-## Deploy with AWS Amplify Hosting
-1. Open AWS Amplify in the AWS Console.
-2. Choose **New app → Host web app**.
-3. Connect GitHub and select `gauravbalade/gaurav-tech-universe`, branch `portfolio-build` (the hackathon version; the assignment branch stays separate).
-4. Confirm the build uses `npm install`, `npm run build`, and artifact directory `dist`. The included `amplify.yml` supplies this configuration.
-5. Deploy, open the Amplify URL, and test navigation, links, contact action, and the interactive Developer Console on desktop and mobile.
-6. Keep the live URL accessible during the judging window.
+Vite writes the production site to `dist/`.
 
-## Before final submission
-- Verify every project description, status, and repository URL is accurate.
-- Verify the email address and resume file are yours and current; replace or remove them if not.
-- Add genuine screenshots of the deployed website and AWS Amplify setup to the hackathon project entry.
-- Document the AWS services actually used, what you learned, and real build/deployment challenges.
-- Do not claim AWS services or features you did not use.
+## Hosting
 
-## AWS cost and security
-Review current AWS Amplify pricing and free-tier limits before deployment. Monitor usage and billing. Never commit AWS access keys, passwords, tokens, or private environment files.
+### Vercel
+Connect this GitHub repository to a Vercel project. The included `vercel.json` sets the Vite framework, build command, install command, and `dist` output directory. Git-based deployments publish future commits automatically.
+
+### AWS Amplify Hosting
+Connect the GitHub repository in Amplify Hosting and select the portfolio branch. The included `amplify.yml` uses Node.js 22, installs dependencies, runs the Vite production build, and publishes `dist/`.
+
+The site is a static portfolio; it does not require EC2, ECS, a database, or AWS credentials in the frontend.
+
+## Project accuracy
+
+Project descriptions distinguish between working features, MVP/demo states, and academic prototypes. The portfolio does not claim that LazyDesk's hosted demo runs local model inference, and it does not present PropertyDesk as an official government service.
+
+## Security and maintenance
+
+- Do not commit API keys, passwords, personal identity documents, or local environment files.
+- Review dependency updates and GitHub Actions results before publishing.
+- Check Vercel and AWS pricing/usage limits for your account.
+- Keep project links, status labels, and contact details current.
