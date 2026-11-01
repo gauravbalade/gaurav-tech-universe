@@ -1,0 +1,259 @@
+import { useState } from 'react'
+import {
+  ArrowDown, ArrowRight, ArrowUpRight, Github, Linkedin, Mail, Menu, X,
+  Code2, Database, Server, Cloud, Sparkles, Terminal, ShieldCheck, Layers,
+  ExternalLink, Download, MapPin, GraduationCap, BriefcaseBusiness, Check
+} from 'lucide-react'
+
+const projects = [
+  {
+    number: '01',
+    name: 'PropertySetu',
+    category: 'Full-stack · Academic project',
+    description: 'A property registration and document-verification workflow focused on structured form filling, private user information, and role-based review by authorized officers.',
+    stack: ['React', 'Spring Boot', 'MySQL'],
+    status: 'In development',
+    href: 'https://github.com/gauravbalade/propertysetu',
+    accent: 'lavender',
+    icon: '⌂'
+  },
+  {
+    number: '02',
+    name: 'LazyDesk',
+    category: 'Open-source · Productivity',
+    description: 'A productivity project exploring ways to reduce repetitive busywork and make everyday digital workflows feel lighter.',
+    stack: ['JavaScript', 'Open source', 'Web'],
+    status: 'Project concept',
+    href: 'https://github.com/gauravbalade',
+    accent: 'mint',
+    icon: '↗'
+  },
+  {
+    number: '03',
+    name: 'Developer Portfolio',
+    category: 'Frontend · Personal project',
+    description: 'A responsive portfolio created to present my learning journey, technical interests, selected work, and an interactive personal feature.',
+    stack: ['React', 'Vite', 'CSS'],
+    status: 'Live project',
+    href: 'https://github.com/gauravbalade/gaurav-tech-universe',
+    accent: 'peach',
+    icon: '</>'
+  }
+]
+
+const powers = [
+  { label: 'The Debugger', title: 'I turn errors into clues.', copy: 'I read the message, reproduce the issue, isolate the cause, and fix it one step at a time.', detail: 'My debugging loop: reproduce → inspect → isolate → fix → verify.' },
+  { label: 'The Builder', title: 'I connect the whole stack.', copy: 'I enjoy taking an idea from a React interface to Spring Boot APIs and a relational database.', detail: 'My build loop: understand → design → implement → test → improve.' },
+  { label: 'The Learner', title: 'I learn by shipping.', copy: 'I learn new tools by making small, real projects and documenting what works and what does not.', detail: 'My learning loop: explore → build → ask → practise → share.' },
+  { label: 'The Finisher', title: 'I keep moving forward.', copy: 'When a project gets difficult, I break the work into manageable tasks and keep making progress.', detail: 'My progress loop: prioritise → focus → complete → review.' }
+]
+
+const skillGroups = [
+  { title: 'Frontend', desc: 'Interfaces that are clear and usable.', icon: Code2, skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Vite'] },
+  { title: 'Backend', desc: 'Application logic and API development.', icon: Server, skills: ['Java', 'Spring Boot', 'REST APIs'] },
+  { title: 'Data', desc: 'Structured data and relational databases.', icon: Database, skills: ['MySQL', 'SQL', 'Database design'] },
+  { title: 'Tools & Cloud', desc: 'The workflow around building and shipping.', icon: Cloud, skills: ['Git', 'GitHub', 'Postman', 'AWS (learning)'] }
+]
+
+function SectionHeading({ eyebrow, title, highlight, description }) {
+  return (
+    <div className="section-heading">
+      <span className="eyebrow">{eyebrow}</span>
+      <h2>{title} <em>{highlight}</em></h2>
+      {description && <p>{description}</p>}
+    </div>
+  )
+}
+
+function App() {
+  const [activePower, setActivePower] = useState(0)
+  const [revealed, setRevealed] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [copied, setCopied] = useState(false)
+
+  const revealPower = () => {
+    setActivePower((current) => (current + 1) % powers.length)
+    setRevealed(true)
+  }
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText('gauravbalade@gmail.com')
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1800)
+    } catch {
+      window.location.href = 'mailto:gauravbalade@gmail.com'
+    }
+  }
+
+  const closeMenu = () => setMenuOpen(false)
+
+  return (
+    <>
+      <header className="site-header">
+        <a className="wordmark" href="#home" onClick={closeMenu} aria-label="Gaurav Balade home">
+          <span className="wordmark-icon">G</span>
+          <span>gaurav<span className="dot">.</span>dev</span>
+        </a>
+        <button className="mobile-menu" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle navigation" aria-expanded={menuOpen}>
+          {menuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
+        <nav className={menuOpen ? 'main-nav is-open' : 'main-nav'} aria-label="Main navigation">
+          <a href="#about" onClick={closeMenu}>About</a>
+          <a href="#skills" onClick={closeMenu}>Skills</a>
+          <a href="#projects" onClick={closeMenu}>Projects</a>
+          <a href="#journey" onClick={closeMenu}>Journey</a>
+          <a className="nav-cta" href="#contact" onClick={closeMenu}>Contact <ArrowUpRight size={15} /></a>
+        </nav>
+      </header>
+
+      <main>
+        <section className="hero page-width" id="home">
+          <div className="hero-content">
+            <div className="availability"><span className="availability-dot" /> COMPUTER ENGINEERING · INDIA</div>
+            <p className="hero-kicker">Hello, I'm Gaurav Balade.</p>
+            <h1>I build digital<br /><span>things that work.</span></h1>
+            <p className="hero-lead">A Computer Engineering student learning by building practical web applications, solving problems, and connecting ideas with technology.</p>
+            <div className="hero-actions">
+              <a className="button button-primary" href="#projects">Explore my work <ArrowRight size={17} /></a>
+              <a className="button button-secondary" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><Github size={17} /> GitHub profile</a>
+            </div>
+            <div className="hero-facts">
+              <span><MapPin size={15} /> Maharashtra, India</span>
+              <span><GraduationCap size={16} /> Computer Engineering</span>
+            </div>
+          </div>
+          <div className="hero-visual" aria-label="A simple illustration representing software development">
+            <div className="code-window">
+              <div className="window-bar"><span /><span /><span /><small>my-next-build.js</small></div>
+              <div className="code-lines">
+                <div><i>01</i><b className="syntax-purple">const</b> <strong>developer</strong> = {'{'}</div>
+                <div><i>02</i>&nbsp;&nbsp;name: <b className="syntax-green">'Gaurav'</b>,</div>
+                <div><i>03</i>&nbsp;&nbsp;focus: <b className="syntax-green">'Building'</b>,</div>
+                <div><i>04</i>&nbsp;&nbsp;mindset: <b className="syntax-green">'Keep learning'</b>,</div>
+                <div><i>05</i>&nbsp;&nbsp;status: <b className="syntax-orange">'In progress'</b></div>
+                <div><i>06</i>{'}'}</div>
+                <div className="code-cursor"><i>07</i><span> </span></div>
+              </div>
+              <div className="window-footer"><span><span className="live-dot" /> Ready to build</span><span>JavaScript · React</span></div>
+            </div>
+            <div className="floating-note note-top"><Code2 size={17} /><span>Build with purpose</span></div>
+            <div className="floating-note note-bottom"><Sparkles size={17} /><span>Learn by doing</span></div>
+            <div className="visual-orb orb-one" /><div className="visual-orb orb-two" />
+          </div>
+          <a href="#about" className="scroll-cue"><ArrowDown size={15} /> Scroll to explore</a>
+        </section>
+
+        <section className="about section-block page-width" id="about">
+          <SectionHeading eyebrow="01 / ABOUT ME" title="A little about" highlight="my journey." />
+          <div className="about-grid">
+            <div className="about-statement">
+              <h3>Curious mind.<br /><span>Practical mindset.</span><br />Always building.</h3>
+              <div className="about-mark">G.</div>
+            </div>
+            <div className="about-copy">
+              <p>I'm a Computer Engineering student from Maharashtra, India. I enjoy understanding how software works and turning what I learn into practical applications.</p>
+              <p>My current focus is full-stack web development: building responsive React interfaces, connecting them to Java and Spring Boot backends, and working with MySQL databases.</p>
+              <p>I believe progress comes from consistency—writing code, asking better questions, learning from mistakes, and improving one project at a time.</p>
+              <div className="about-points">
+                <div><span className="point-icon"><BriefcaseBusiness size={17} /></span><span><b>What I enjoy</b><small>Building useful web applications</small></span></div>
+                <div><span className="point-icon"><ShieldCheck size={17} /></span><span><b>How I work</b><small>Experiment, debug, test, improve</small></span></div>
+                <div><span className="point-icon"><Layers size={17} /></span><span><b>What is next</b><small>Growing my cloud and deployment skills</small></span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="skills section-block" id="skills">
+          <div className="page-width">
+            <SectionHeading eyebrow="02 / TECH SUPERPOWERS" title="My tools for" highlight="making things." description="Technologies I have worked with or am actively learning through coursework and projects." />
+            <div className="skill-grid">
+              {skillGroups.map(({ title, desc, icon: Icon, skills }) => (
+                <article className="skill-card" key={title}>
+                  <div className="skill-icon"><Icon size={21} /></div>
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
+                  <div className="skill-tags">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
+                </article>
+              ))}
+            </div>
+            <p className="skill-note">Skills reflect practical exposure and ongoing learning—not a claim of expert-level proficiency.</p>
+          </div>
+        </section>
+
+        <section className="projects section-block page-width" id="projects">
+          <SectionHeading eyebrow="03 / SELECTED WORK" title="Projects with" highlight="purpose." description="A few projects and ideas that represent what I am learning, building, and exploring." />
+          <div className="project-grid">
+            {projects.map((project) => (
+              <article className="project-card" key={project.name}>
+                <div className={'project-cover ' + project.accent}>
+                  <span className="project-index">{project.number} / SELECTED PROJECT</span>
+                  <span className="project-graphic">{project.icon}</span>
+                  <span className="project-status">{project.status}</span>
+                </div>
+                <div className="project-body">
+                  <span className="project-category">{project.category}</span>
+                  <h3>{project.name}</h3>
+                  <p>{project.description}</p>
+                  <div className="project-stack">{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
+                  <a className="project-action" href={project.href} target="_blank" rel="noreferrer">View repository <ExternalLink size={15} /></a>
+                </div>
+              </article>
+            ))}
+          </div>
+          <a className="all-projects" href="https://github.com/gauravbalade?tab=repositories" target="_blank" rel="noreferrer">Explore more on GitHub <ArrowUpRight size={16} /></a>
+        </section>
+
+        <section className="feature-section" id="journey">
+          <div className="page-width feature-grid">
+            <div className="feature-copy">
+              <span className="eyebrow eyebrow-light">A PERSONAL INTERACTIVE FEATURE</span>
+              <h2>Discover my<br /><em>developer mindset.</em></h2>
+              <p>Every developer has a strength they lean on when a challenge appears. Pick a card to reveal one of mine—and how it shows up when I build.</p>
+              <div className="feature-hint"><Sparkles size={17} /><span><b>Here's your hint:</b> Choose any power card on the right. Each one reveals a different part of my approach.</span></div>
+            </div>
+            <div className="power-console">
+              <div className="console-heading"><span><span className="console-dot" /> THE DEVELOPER CONSOLE</span><span>INTERACTIVE / 04</span></div>
+              <div className="power-options">
+                {powers.map((power, index) => (
+                  <button key={power.label} className={revealed && activePower === index ? 'power-option active' : 'power-option'} onClick={() => { setActivePower(index); setRevealed(true) }}>
+                    <span className="power-num">0{index + 1}</span><span>{power.label}</span><ArrowUpRight size={16} />
+                  </button>
+                ))}
+              </div>
+              <div className="power-result" aria-live="polite">
+                {revealed ? <><span className="result-label"><Check size={13} /> POWER UNLOCKED</span><h3>{powers[activePower].title}</h3><p>{powers[activePower].copy}</p><small>{powers[activePower].detail}</small></> : <><span className="result-label"><Sparkles size={13} /> WAITING FOR INPUT</span><h3>Your next discovery is here.</h3><p>Select one of the four power cards above to reveal a personal detail.</p><small>Four cards. Four ways to keep growing.</small></>}
+              </div>
+              <div className="console-footer"><span>GAURAV.EXE</span><span>STATUS: {revealed ? 'POWER ACTIVE' : 'AWAITING CLICK'}</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="contact section-block page-width" id="contact">
+          <div className="contact-panel">
+            <div>
+              <span className="eyebrow">04 / GET IN TOUCH</span>
+              <h2>Let's make<br /><em>something useful.</em></h2>
+              <p>Have a project idea, learning resource, or opportunity to collaborate? I'd be happy to connect.</p>
+            </div>
+            <div className="contact-links">
+              <button className="contact-button" onClick={copyEmail}><Mail size={18} /> {copied ? 'Email copied!' : 'gauravbalade@gmail.com'} {copied ? <Check size={16} /> : <ArrowUpRight size={16} />}</button>
+              <a className="contact-button" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><Github size={18} /> GitHub <ArrowUpRight size={16} /></a>
+              <a className="contact-button" href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><Linkedin size={18} /> LinkedIn <ArrowUpRight size={16} /></a>
+              <a className="resume-link" href="/resume.pdf" target="_blank" rel="noreferrer"><Download size={15} /> View resume (PDF)</a>
+              <small>Check that your resume and contact details are current before sharing this portfolio.</small>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="site-footer page-width">
+        <a className="wordmark" href="#home"><span className="wordmark-icon">G</span><span>gaurav<span className="dot">.</span>dev</span></a>
+        <span>Built with curiosity and code · © {new Date().getFullYear()} Gaurav Balade</span>
+        <a href="#home" className="back-top">Back to top ↑</a>
+      </footer>
+    </>
+  )
+}
+
+export default App
