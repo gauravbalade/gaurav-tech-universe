@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {
-  ArrowDown, ArrowRight, ArrowUpRight, Github, Mail, Code2, Database,
+  ArrowDown, ArrowRight, ArrowUpRight, GitBranch, Mail, Code2, Database,
   Server, Cloud, Sparkles, ShieldCheck, GraduationCap, MapPin,
   BriefcaseBusiness, ExternalLink, Terminal, Menu, X, Check,
   Laptop, Workflow, HeartHandshake, ChevronRight
@@ -172,7 +172,7 @@ function App() {
             <p className="hero-description">A final-year Computer Engineering student focused on full-stack development, practical problem-solving, and building products that make everyday workflows simpler.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#work">Explore selected work <ArrowRight size={16}/></a>
-              <a className="button button-outline" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><Github size={16}/> GitHub profile</a>
+              <a className="button button-outline" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><GitBranch size={16}/> GitHub profile</a>
             </div>
             <div className="hero-links">
               <span><MapPin size={14}/> Maharashtra, India</span>
@@ -186,7 +186,7 @@ function App() {
             <div className="profile-row">
               <img className="profile-avatar" src="https://avatars.githubusercontent.com/u/159923687?v=4" alt="Gaurav Balade GitHub profile avatar"/>
               <div><b>Gaurav Balade</b><span>Developer · Lifelong learner</span></div>
-              <a href="https://github.com/gauravbalade" target="_blank" rel="noreferrer" aria-label="Open GitHub profile"><Github size={18}/></a>
+              <a href="https://github.com/gauravbalade" target="_blank" rel="noreferrer" aria-label="Open GitHub profile"><GitBranch size={18}/></a>
             </div>
             <div className="build-log">
               <div className="build-log-heading"><span>FOCUS AREAS</span><span>LEARNING / BUILDING</span></div>
@@ -260,7 +260,7 @@ function App() {
                   <p>{project.detail}</p>
                   <div className="project-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
                   <div className="project-actions">
-                    <a className="project-source" href={project.source} target="_blank" rel="noreferrer"><Github size={15}/> Source code <ArrowUpRight size={13}/></a>
+                    <a className="project-source" href={project.source} target="_blank" rel="noreferrer"><GitBranch size={15}/> Source code <ArrowUpRight size={13}/></a>
                     {project.demo && <a className="project-demo" href={project.demo} target="_blank" rel="noreferrer">Open demo <ExternalLink size={13}/></a>}
                   </div>
                 </div>
@@ -327,7 +327,7 @@ function App() {
             <div className="contact-copy"><div className="section-kicker"><span>06</span> CONTACT</div><h2>Have a good problem?<br/><em>Let's work on it.</em></h2><p>I'm interested in software development opportunities, practical collaborations, and learning from people who build thoughtful products.</p></div>
             <div className="contact-actions">
               <a className="contact-link primary-contact" href="mailto:gauravbalade@gmail.com"><Mail size={17}/> Email me <ArrowUpRight size={15}/></a>
-              <a className="contact-link" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><Github size={17}/> Explore my GitHub <ArrowUpRight size={15}/></a>
+              <a className="contact-link" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><GitBranch size={17}/> Explore my GitHub <ArrowUpRight size={15}/></a>
               <a className="contact-link" href="https://leetcode.com/u/gauravbalade/" target="_blank" rel="noreferrer"><Code2 size={17}/> LeetCode profile <ArrowUpRight size={15}/></a>
               <a className="contact-link" href="https://github.com/gauravbalade?tab=repositories" target="_blank" rel="noreferrer"><ExternalLink size={17}/> More repositories <ArrowUpRight size={15}/></a>
             </div>
