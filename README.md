@@ -1,54 +1,96 @@
 # Gaurav Tech Universe
 
-**A personal developer portfolio by Gaurav Balade — built with React, Vite, and a little curiosity.
+**A personal portfolio by Gaurav Balade — focused on practical software, thoughtful interfaces, and continuous learning.**
 
-**Live portfolio:** https://gaurav-tech-universe.vercel.app
+🌐 **Live website:** https://gaurav-tech-universe.vercel.app  
+💻 **Source code:** https://github.com/gauravbalade/gaurav-tech-universe  
+👤 **GitHub:** https://github.com/gauravbalade  
+🔗 **LinkedIn:** https://www.linkedin.com/in/gaurav-balade-86bbb3321/  
+🧩 **LeetCode:** https://leetcode.com/u/gauravbalade/
 
-**Source code:** https://github.com/gauravbalade/gaurav-tech-universe**
+---
 
-> Final-year Computer Engineering student | Full-stack development | Practical problem-solving
+## About
 
-## What this portfolio is
+I am a final-year Computer Engineering student at Datta Meghe College of Engineering, Airoli, Maharashtra. I enjoy building full-stack web applications, connecting frontend experiences with backend APIs, and solving practical problems through code.
 
-A recruiter-friendly portfolio that introduces my background, shows selected software projects, explains my technical toolkit, and gives visitors a small interactive command line to explore the site.
+This portfolio brings together my technical toolkit, selected projects, campus involvement, and an interactive command-line experience.
 
-## Highlights
+## What you'll find
 
-- Clear **About**, **Skills**, **Selected Work**, **Journey**, and **Contact** sections.
-- Custom project previews and direct source links.
-- An interactive visitor terminal with commands such as `help`, `about`, `skills`, `projects`, `lazydesk`, `propertysetu`, `journey`, `github`, and `leetcode`.
-- A visible hint to discover the terminal interaction.
-- Responsive layout, keyboard-accessible controls, reduced-motion support, and social preview metadata.
-- GitHub Actions build check.
-- Ready for Vercel and AWS Amplify Hosting.
+- **About:** My background, interests, and approach to building software.
+- **Technical toolkit:** Frontend, backend, database, developer tools, and cloud technologies I am learning.
+- **Selected work:** Project context, technology choices, implementation notes, and source links.
+- **Journey:** Campus involvement, open-source exploration, and academic project experience.
+- **Interactive terminal:** A small command-line interface visitors can use to explore the portfolio.
 
-## Featured work
+## Selected projects
 
-### LazyDesk — open-source AI MVP
-A local-first notes-to-actions assistant. The React workspace and FastAPI backend are designed around summaries, action items, and follow-up questions. The hosted preview uses a clearly labelled deterministic demo mode; the Ollama model path is intended for local evaluation.
+### LazyDesk — Open-source AI MVP
 
-- Source: https://github.com/gauravbalade/LazyDesk
-- Hosted preview: https://lazydesk-web-final.onrender.com
+A local-first desk assistant concept for turning unstructured notes into summaries and actionable next steps. The project includes a React workspace and FastAPI backend. Its hosted preview uses deterministic demo behaviour; local Ollama inference is intended for local evaluation.
 
-### PropertySetu / PropertyDesk — academic project
-A property record and visit-management learning project with owner profiles, property records, addresses, visit requests, and status workflows. It is an academic prototype, not an official government registration portal.
+- **Source:** https://github.com/gauravbalade/LazyDesk
+- **Hosted preview:** https://lazydesk-web-final.onrender.com
+- **Status:** MVP / ongoing development
 
-- Source: https://github.com/gauravbalade/propertysetu
+### PropertySetu / PropertyDesk — Academic full-stack project
+
+An academic property record and visit-management prototype covering owner profiles, property records, addresses, visit requests, and controlled status workflows. It is a learning project, not an official government registration service.
+
+- **Source:** https://github.com/gauravbalade/propertysetu
+- **Status:** Academic prototype / ongoing development
+
+### Additional academic team projects
+
+- **Barber Shop Website:** Contributed to page structure, styling, and client-side interactions.
+- **Bus Reservation System:** Contributed to a reservation workflow involving authentication, bus schedules, ticket booking, and PostgreSQL-backed data.
+
+Team projects are identified as collaborative work rather than individual ownership.
 
 ## Campus involvement
 
-- **CSI-CATT, DMCE — Publicity Team Member (August 2024 – October 2026; 2 years 3 months):** contributed as a member of the student chapter's publicity team, supporting communication and promotion of campus technical activities. This was a team-member role, not a leadership or team-head position.
+**CSI-CATT, DMCE — Publicity Team Member**  
+**August 2024 – October 2026 · 2 years 3 months**
 
-This was a team membership role, not a leadership or team-head position.
+Contributed as a member of the student chapter's publicity team, supporting communication and promotion of campus technical activities and events. This was a team-member role, not a leadership or team-head position.
 
-## Tech stack
+## Highlights
 
-- React 19
-- Vite 8
-- JavaScript (ES modules)
-- CSS
-- Lucide React
-- Node.js 22 for local development and CI
+- **Unstop Talent Park, 2025:** Winner — Round 1, Learning Boot Camp.
+- **Hacktoberfest, 2024:** Level 4 participant badge.
+- **ENSPIRE'26, March 2026:** Ideathon participant, organised by E-Cell, DMCE.
+
+## Technical toolkit
+
+| Area | Technologies |
+|---|---|
+| Frontend | React, JavaScript, HTML, CSS, Vite |
+| Backend | Java, Spring Boot, REST APIs |
+| Database | MySQL, SQL, JPA / Hibernate |
+| Tools | Git, GitHub, Postman |
+| Cloud | AWS fundamentals — currently learning |
+
+Skills reflect practical project and coursework experience, alongside technologies I am actively learning.
+
+## Interactive terminal
+
+Use the terminal on the website and try:
+
+```text
+help
+about
+skills
+projects
+lazydesk
+propertysetu
+journey
+github
+leetcode
+clear
+```
+
+All terminal commands run locally in the browser; no visitor input is sent to a server.
 
 ## Run locally
 
@@ -61,7 +103,7 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite (normally http://localhost:5173).
+Open the local URL printed by Vite, usually http://localhost:5173.
 
 ## Production build
 
@@ -70,25 +112,27 @@ npm run build
 npm run preview
 ```
 
-Vite writes the production site to `dist/`. The live Vercel deployment is the primary public portfolio link; AWS Amplify is the separate hosting target for the student challenge.
+Vite writes the production site to `dist/`.
 
-## Hosting
+## Hosting and deployment
 
 ### Vercel
-Production site: https://gaurav-tech-universe.vercel.app. The GitHub `main` branch is connected to Vercel. The included `vercel.json` sets the Vite framework, install command, production build command, and `dist` output directory. Future commits to `main` trigger deployments automatically.
 
-### AWS Amplify Hosting
-Connect the GitHub repository in Amplify Hosting and select the `main` branch. The included `amplify.yml` uses Node.js 22, installs dependencies, runs the Vite production build, and publishes `dist/`.
+The live portfolio is hosted at https://gaurav-tech-universe.vercel.app. The GitHub `main` branch is connected to Vercel, and future commits to `main` trigger production deployments.
 
-The site is a static portfolio; it does not require EC2, ECS, a database, or AWS credentials in the frontend.
+The included `vercel.json` defines the Vite framework, install command, production build command, and `dist` output directory.
+
+### AWS Amplify
+
+An `amplify.yml` build specification is included for optional AWS Amplify Hosting deployment. It uses Node.js 22, installs dependencies, runs the production build, and publishes `dist/`. AWS deployment is not required to run the portfolio locally or to use its current Vercel deployment.
 
 ## Project accuracy
 
-Project descriptions distinguish between working features, MVP/demo states, and academic prototypes. The portfolio does not claim that LazyDesk's hosted demo runs local model inference, and it does not present PropertyDesk as an official government service.
+Project descriptions distinguish between ongoing MVP work, academic prototypes, and team contributions. The hosted LazyDesk preview is not described as running local-model inference, and PropertySetu / PropertyDesk is not presented as an official government service.
 
-## Security and maintenance
+## Maintenance and security
 
-- Do not commit API keys, passwords, personal identity documents, or local environment files.
-- Review dependency updates and GitHub Actions results before publishing.
-- Check Vercel and AWS pricing/usage limits for your account.
-- Keep project links, status labels, and contact details current.
+- Keep project descriptions, links, dates, and contact information current.
+- Do not commit API keys, passwords, tokens, or private environment files.
+- Review dependency updates and GitHub Actions build results before publishing.
+- Check hosting-provider usage and pricing when changing deployment settings.
