@@ -2,8 +2,7 @@ import { useState } from 'react'
 import {
   ArrowDown, ArrowRight, ArrowUpRight, GitBranch, Mail, Code2, Database,
   Server, Cloud, Sparkles, ShieldCheck, GraduationCap, MapPin,
-  BriefcaseBusiness, ExternalLink, Terminal, Menu, X, Check,
-  Laptop, Workflow, HeartHandshake, ChevronRight
+  BriefcaseBusiness, ExternalLink, Menu, X, Check, Workflow, HeartHandshake
 } from 'lucide-react'
 
 const projects = [
@@ -169,7 +168,7 @@ function App() {
             <div className="availability"><span/> COMPUTER ENGINEERING · MAHARASHTRA, INDIA</div>
             <p className="hero-intro">Hello, I'm Gaurav.</p>
             <h1>I turn ideas into<br/><span>working software.</span></h1>
-            <p className="hero-description">A final-year Computer Engineering student focused on full-stack development, practical problem-solving, and building products that make everyday workflows simpler.</p>
+            <p className="hero-description">I’m a final-year Computer Engineering student who enjoys building full-stack web applications — from clear React interfaces to Java and Spring Boot APIs backed by MySQL. I learn by shipping projects, debugging real issues, and improving the details that make software useful.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="#work">Explore selected work <ArrowRight size={16}/></a>
               <a className="button button-outline" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><GitBranch size={16}/> GitHub profile</a>
@@ -195,7 +194,7 @@ function App() {
               <div className="build-item"><span className="build-icon green"><Database size={16}/></span><span><b>Data & persistence</b><small>MySQL · SQL · JPA</small></span><span className="build-state">PRACTISING</span></div>
               <div className="build-item"><span className="build-icon amber"><Cloud size={16}/></span><span><b>Cloud deployment</b><small>AWS · Vercel · hosting workflows</small></span><span className="build-state learning">LEARNING</span></div>
             </div>
-            <div className="panel-footer"><span><span className="footer-dot"/> AVAILABLE FOR THE NEXT CHALLENGE</span><span>G / 2026</span></div>
+            <div className="panel-footer"><span><span className="footer-dot"/> OPEN TO SOFTWARE DEVELOPMENT OPPORTUNITIES</span><span>G / 2026</span></div>
           </div>
           <a href="#about" className="scroll-hint"><ArrowDown size={14}/> Scroll to explore</a>
         </section>
@@ -295,9 +294,9 @@ function App() {
         <section className="terminal-section" id="explore">
           <div className="page-width terminal-layout">
             <div className="terminal-copy">
-              <div className="section-kicker terminal-kicker"><span>05</span> A SMALL INTERACTIVE EASTER EGG</div>
+              <div className="section-kicker terminal-kicker"><span>05</span> INTERACTIVE DEVELOPER TERMINAL</div>
               <h2>Explore my portfolio<br/><em>like a developer.</em></h2>
-              <p>Not every portfolio needs another carousel. This one has a tiny command line. Use it to discover my work, skills, and the way I approach problems.</p>
+              <p>Explore this portfolio through a small command-line experience. Try a few commands to discover my projects, technical toolkit, and approach to problem-solving.</p>
               <div className="terminal-hint"><Sparkles size={17}/><span><b>Visible hint:</b> type <code>help</code> into the prompt, or try one of the suggested commands.</span></div>
               <div className="command-suggestions"><span>TRY A COMMAND</span>{suggestions.map((command) => <button key={command} onClick={() => runCommand(command)}>{command}</button>)}</div>
             </div>
@@ -324,7 +323,7 @@ function App() {
 
         <section className="contact-section page-width" id="contact">
           <div className="contact-panel">
-            <div className="contact-copy"><div className="section-kicker"><span>06</span> CONTACT</div><h2>Have a good problem?<br/><em>Let's work on it.</em></h2><p>I'm interested in software development opportunities, practical collaborations, and learning from people who build thoughtful products.</p></div>
+            <div className="contact-copy"><div className="section-kicker"><span>06</span> CONTACT</div><h2>Building something useful?<br/><em>Let's connect.</em></h2><p>I'm interested in software development opportunities, practical collaborations, and learning from people who build thoughtful products.</p></div>
             <div className="contact-actions">
               <a className="contact-link primary-contact" href="mailto:gauravbalade@gmail.com"><Mail size={17}/> Email me <ArrowUpRight size={15}/></a>
               <a className="contact-link" href="https://github.com/gauravbalade" target="_blank" rel="noreferrer"><GitBranch size={17}/> Explore my GitHub <ArrowUpRight size={15}/></a>
